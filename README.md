@@ -91,7 +91,7 @@ Confusion Matrix for final model:
 ## Detection Testing
 
 A sample script, [check_image.ipynb](Test/check_image.ipynb) is provided to test a single image from a local file or an URL with the trained model.  
-The output would the classification from "classify_names" and a general description from "classify_desc" along with the image display.
+The output would be a classification from "classify_names" and a general description from "classify_desc" along with the image display.
 
 ## Summary
 
