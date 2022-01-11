@@ -25,3 +25,7 @@ Note: The "Type ID" descriptions mentioned in the datasets should be corrected a
 
 1. [500 GB of images with people wearing masks. Part 1](https://www.kaggle.com/tapakah68/medical-masks-part1/) - Dataset 1 for training and testing
 2. [500 GB of images with people wearing masks. Part 7](https://www.kaggle.com/tapakah68/medical-masks-part7) - Dataset 2 for validation
+
+## Pre-processing
+
+The raw dataset is preprocessed with [preprocess.ipynb](Preprocess/preprocess.ipynb)
