@@ -67,6 +67,8 @@ The full models and related details are included in the training scripts, which 
 
 The output model is also validated with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
 
+Final model:
+
 ![Combined Model](Method_2/combined.png)
 
 Confusion Matrix for gender:
