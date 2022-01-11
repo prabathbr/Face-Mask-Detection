@@ -5,7 +5,7 @@ This project is developed to study popular deep learning networks in image class
 ## Objectives
 
 1. Develop a neural network classifier to identify the eight classes defined by gender and different face mask worn type combinations.
-1. Tune the Keras/Tensorflow based model to obtain 90% accuracy with a balanced dataset.
+1. Tune the Keras/Tensorflow based model to obtain 90 % test accuracy with a balanced dataset.
 
 ## License
 
@@ -23,5 +23,5 @@ Publicly available below Kaggle datasets were used for training, testing and val
 
 Note: The "Type ID" descriptions mentioned in the datasets should be corrected as in [this](https://www.kaggle.com/tapakah68/medical-masks-part1/discussion/254996) discussion post.
 
-1. [500 GB of images with people wearing masks. Part 1](https://www.kaggle.com/tapakah68/medical-masks-part1/)
-2. [500 GB of images with people wearing masks. Part 7](https://www.kaggle.com/tapakah68/medical-masks-part7)
+1. [500 GB of images with people wearing masks. Part 1](https://www.kaggle.com/tapakah68/medical-masks-part1/) - Dataset 1 for training and testing
+2. [500 GB of images with people wearing masks. Part 7](https://www.kaggle.com/tapakah68/medical-masks-part7) - Dataset 2 for validation
