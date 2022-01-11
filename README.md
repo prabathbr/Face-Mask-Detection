@@ -69,6 +69,18 @@ The output model is also validated with the dataset 2 with verification script, 
 
 ![Combined Model](Method_2/combined.png)
 
+Confusion Matrix for gender:
+
+![CNF](Method_2/cnf_gender.png)
+
+Confusion Matrix for type:
+
+![CNF](Method_2/cnf_type.png)
+
+Confusion Matrix for final model:
+
+![CNF](Method_2/cnf_combined.png)
+
 
 ## Results
 
