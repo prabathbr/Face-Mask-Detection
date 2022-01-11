@@ -19,8 +19,8 @@ DataDisca Pty Ltd, Melbourne, Australia
 
 ## Dataset
 
-Publicly available below Kaggle datasets were used for training, testing and validation. 
-Please check the respective licenses of the datasets mentioned here before using them.
+Publicly available below Kaggle datasets were used for training, testing and validation.  
+Please check the respective licenses of the datasets mentioned here before using them.  
 Note: The "Type ID" descriptions mentioned in the datasets should be corrected as in [this](https://www.kaggle.com/tapakah68/medical-masks-part1/discussion/254996) discussion post.
 
 1. [500 GB of images with people wearing masks. Part 1](https://www.kaggle.com/tapakah68/medical-masks-part1/)
