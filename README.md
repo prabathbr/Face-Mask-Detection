@@ -5,8 +5,6 @@ This project is developed to study popular deep learning networks in image class
 ## Objectives
 
 1. Develop a neural network classifier to identify the eight classes defined by gender and different face mask worn type combinations.  
- ```["Male, mask is worn correctly, covers the nose and mouth", "Male, mask covers the mouth, but does not cover the nose", "Male, mask is on, but does not cover the nose or mouth.", "Male, no mask on the face","Female, mask is worn correctly, covers the nose and mouth", "Female, mask covers the mouth, but does not cover the nose", "Female, mask is on, but does not cover the nose or mouth.", "Female, no mask on the face"]```
-
 2. Tune the Keras/Tensorflow based model to obtain 90 % test accuracy with a balanced dataset.
 
 ## License
@@ -41,7 +39,11 @@ Latest tested versions are mentioned inside the brackets along with the library 
 7. OpenCV (4.5.1)
 8. Matplotlib  (3.5.0)
 9. Tensorflow (2.9.0.dev20220102) including Keras (2.9.0.dev2022010308) and Tensorboard (2.8.0a20220102)
-
+10. Scikit-learn (1.0.1)
+11. Plotly (5.4.0)
+12. Pydot (1.4.2) - Dependency for [tf.keras.utils.plot_model](https://www.tensorflow.org/api_docs/python/tf/keras/utils/plot_model)
+13. Pydotplus (2.0.2) - Dependency for [tf.keras.utils.plot_model](https://www.tensorflow.org/api_docs/python/tf/keras/utils/plot_model) 
+14. [GraphViz](https://graphviz.org/download/) (2.50.0) - Dependency for [tf.keras.utils.plot_model](https://www.tensorflow.org/api_docs/python/tf/keras/utils/plot_model)
 
 ## Preprocessing
 
@@ -52,7 +54,7 @@ After runnning this script, there will be subfolders with classes mentioned in "
 
 ## Method 1
 
-In the method, the model is trained to classify the all 8 classes in a single stage based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. The full model and related details are included in the training script, [classify_once.ipynb](Method_1/classify_once.ipynb) which to be used with the dataset 1.
+In the method, the model is trained to classify the all 8 classes in a single stage based on a pretrained [ResNet-50 model](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50). Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. The full model and related details are included in the training script, [classify_once.ipynb](Method_1/classify_once.ipynb) which to be used with the dataset 1.
 
 The output model is also verified  with the dataset 2 with verification script, [verification_once.ipynb](Method_1/verification_once.ipynb).
 
@@ -62,7 +64,7 @@ Confusion Matrix :
 
 ## Method 2
 
-In the method, two models are trained to classify the gender (2 classes) with [classify_gender.ipynb](Method_2/classify_gender.ipynb) and face mask worn type (4 classes) with [classify_type.ipynb](Method_2/classify_type.ipynb) based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. 
+In the method, two models are trained to classify the gender (2 classes) with [classify_gender.ipynb](Method_2/classify_gender.ipynb) and face mask worn type (4 classes) with [classify_type.ipynb](Method_2/classify_type.ipynb) based on a pretrained [ResNet-50 model](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet50/ResNet50). Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. 
 
 After that, the two trained models are concatenated to make a parallel network along with new layers, and trained with the full dataset similar to in method 1 with [train_combined.ipynb](Method_2/train_combined.ipynb).
 The full models and related details are included in the training scripts, which to be used with the dataset 1.
