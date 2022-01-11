@@ -52,7 +52,7 @@ After runnning this script, there will be subfolders with classes mentioned in "
 
 In the method, the model is trained to classify the all 8 classes in a single stage based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. The full model and related details are included in the training script, [classify_once.ipynb](Method_1/classify_once.ipynb) which to be used with the dataset 1.
 
-The output model is also validated with the dataset 2 with verfication script, [verification_once.ipynb](Method_1/verification_once.ipynb).
+The output model is also validated with the dataset 2 with verification script, [verification_once.ipynb](Method_1/verification_once.ipynb).
 
 ## Method 2
 
@@ -61,7 +61,9 @@ In the method, two models are trained to classify the gender (2 classes) with [c
 After that, the two trained models are concatenated to make a parallel network along with new layers, and trained with the full dataset similar to in method 1 with [train_combined.ipynb](Method_2/train_combined.ipynb).
 The full models and related details are included in the training scripts, which to be used with the dataset 1.
 
-The output model is also validated with the dataset 2 with verfication script, [verification.ipynb](Method_2/verification.ipynb).
+![Combined Model](Method_2/combined.png)
+
+The output model is also validated with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
 
 ## Results
 
