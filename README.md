@@ -34,8 +34,8 @@ Latest tested versions are mentioned inside the brackets along with the library 
 
 ## Preprocessing
 
-The raw dataset is preprocessed with [preprocess.ipynb](Preprocess/preprocess.ipynb) in order to remove non-image files and to categorize into eight classes defined by gender and different face mask worn type combinations by checking the filenames.    
-Before running the preprocessing script, the raw dataset should be extracted to "original_images".  
+The raw dataset is preprocessed with [preprocess.ipynb](Preprocess/preprocess.ipynb) in order to remove non-image files and to categorize into eight classes defined by gender and different face mask worn type combinations by checking the filenames.      
+Before running the preprocessing script, the raw dataset should be extracted to "original_images".    
 After runnning this script, there will be subfolders with classes mentioned in "classify_names" inside the "temp_base" preprocessed dataset output directory.
 
 
