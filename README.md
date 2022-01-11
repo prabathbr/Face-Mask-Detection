@@ -97,7 +97,7 @@ The output would the classification from "classify_names" and a general descript
 
 | Method              | Source Code         | Description | Confusion Matrix |  Test Accuracy (dataset 1) | Verification Accuracy (dataset 2) |
 |-------------------------|-----------------|-------------------|-------------------|-------------------|-------------------|
-| All | [preprocess.ipynb](Preprocess/preprocess.ipynb)  |Raw dataset reprocessing script before training models  | -   | -   | -   |
+| All | [preprocess.ipynb](Preprocess/preprocess.ipynb)  |Raw dataset preprocessing script before training models  | -   | -   | -   |
 | 1  | [classify_once.ipynb](Method_1/classify_once.ipynb) |  Training script  | [CNF](Method_1/method1_cnf.png)   | 89.73 %   | -   |
 | 1  | [verification_once.ipynb](Method_1/verification_once.ipynb) |  Verification script | -   | -  | 78.21 %  |
 | 2  | [classify_gender.ipynb](Method_2/classify_gender.ipynb) |  Training script for gender model | [CNF](Method_2/cnf_gender.png)   | 96.22 %   | -   |
