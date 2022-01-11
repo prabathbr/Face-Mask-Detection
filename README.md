@@ -43,10 +43,29 @@ Latest tested versions are mentioned inside the brackets along with the library 
 
 ## Preprocessing
 
-The raw dataset is preprocessed with [preprocess.ipynb](Preprocess/preprocess.ipynb) in order to remove non-image files and to categorize into eight classes defined by gender and different face mask worn type combinations by checking the filenames.     
+The raw dataset is preprocessed with [preprocess.ipynb](Preprocess/preprocess.ipynb) in order to remove non-image files/incorrectly labelled files and to categorize into eight classes defined by gender and different face mask worn type combinations by checking the filenames.     
 
 Before running the preprocessing script, the raw dataset should be extracted to "original_images".    
 After runnning this script, there will be subfolders with classes mentioned in "classify_names" inside the "temp_base" preprocessed dataset output directory.
+
+## Method 1
+
+In the method, the model is trained to classify the all 8 classes in a single stage based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. The full model and related details are included in the training script, [classify_once.ipynb](Method_1/classify_once.ipynb) which to be used with the dataset 1.
+
+The output model is also validated with the dataset 2 with verfication script, [verification_once.ipynb](Method_1/verification_once.ipynb).
+
+## Method 2
+
+In the method, two models are trained to classify the gender (2 classes) with [classify_gender.ipynb](Method_2/classify_gender.ipynb) and face mask worn type (4 classes) with [classify_type.ipynb](Method_2/classify_type.ipynb) based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. 
+
+After that, the two trained models are concatenated to make a parallel network along with new layers, and trained with the full dataset similar to in method 1 with [train_combined.ipynb](Method_2/train_combined.ipynb).
+The full models and related details are included in the training scripts, which to be used with the dataset 1.
+
+The output model is also validated with the dataset 2 with verfication script, [verification.ipynb](Method_2/verification.ipynb).
+
+## Results
+
+
 
 ## Detection Testing
 
