@@ -84,12 +84,18 @@ Confusion Matrix for final model:
 ![CNF](Method_2/cnf_combined.png)
 
 
-## Results
-
-
-
 ## Detection Testing
 
 A sample script, [check_image.ipynb](Test/check_image.ipynb) is provided to test a single image from a local file or an URL with the trained model.  
 The output would the classification from "classify_names" and a general description from "classify_desc" along with the image display.
+
+## Summary
+
+| Method              | Source Code         | Description | Confusion Matrix |  Test Accuracy (dataset 1) | Verification Accuracy (dataset 2) |
+|-------------------------|-----------------|-------------------|-------------------|-------------------|-------------------|
+| All | [preprocess.ipynb](Preprocess/preprocess.ipynb)  |Raw dataset reprocessing script before training models  | -   | -   | -   |
+| All  | [check_image.ipynb](Test/check_image.ipynb) |  Script to test a single image from a local file or an URL with the trained model  | -   | -   | -   |
+
+
+
 
