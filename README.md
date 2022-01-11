@@ -52,7 +52,7 @@ After runnning this script, there will be subfolders with classes mentioned in "
 
 In the method, the model is trained to classify the all 8 classes in a single stage based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. The full model and related details are included in the training script, [classify_once.ipynb](Method_1/classify_once.ipynb) which to be used with the dataset 1.
 
-The output model is also validated with the dataset 2 with verification script, [verification_once.ipynb](Method_1/verification_once.ipynb).
+The output model is also verified  with the dataset 2 with verification script, [verification_once.ipynb](Method_1/verification_once.ipynb).
 
 Confusion Matrix :
 
@@ -65,7 +65,7 @@ In the method, two models are trained to classify the gender (2 classes) with [c
 After that, the two trained models are concatenated to make a parallel network along with new layers, and trained with the full dataset similar to in method 1 with [train_combined.ipynb](Method_2/train_combined.ipynb).
 The full models and related details are included in the training scripts, which to be used with the dataset 1.
 
-The output model is also validated with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
+The output model is also verified with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
 
 Final model:
 
@@ -94,6 +94,12 @@ The output would the classification from "classify_names" and a general descript
 | Method              | Source Code         | Description | Confusion Matrix |  Test Accuracy (dataset 1) | Verification Accuracy (dataset 2) |
 |-------------------------|-----------------|-------------------|-------------------|-------------------|-------------------|
 | All | [preprocess.ipynb](Preprocess/preprocess.ipynb)  |Raw dataset reprocessing script before training models  | -   | -   | -   |
+| 1  | [classify_once.ipynb](Method_1/classify_once.ipynb) |  Training script  | [CNF](Method_1/method1_cnf.png)   | 89.73 %   | -   |
+| 1  | [verification_once.ipynb](Method_1/verification_once.ipynb) |  Verification script | -   | -  | 78.21 %  |
+| 2  | [classify_gender.ipynb](Method_2/classify_gender.ipynb) |  Training script for gender model | [CNF](Method_2/cnf_gender.png)   | 96.22 %   | -   |
+| 2  | [classify_type.ipynb](Method_2/classify_type.ipynb) |  Training script for type model | [CNF](Method_2/cnf_type.png)  | 94.60 %   | -   |
+| 2  | [train_combined.ipynb](Method_2/train_combined.ipynb) |  Training script for final model | [CNF](Method_2/cnf_combined.png)   | 95.13 %   | -   |
+| 2  | [verification.ipynb](Method_2/verification.ipynb) |  Verification script | -   | -  | 79.44 %  |
 | All  | [check_image.ipynb](Test/check_image.ipynb) |  Script to test a single image from a local file or an URL with the trained model  | -   | -   | -   |
 
 
