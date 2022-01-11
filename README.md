@@ -54,6 +54,10 @@ In the method, the model is trained to classify the all 8 classes in a single st
 
 The output model is also validated with the dataset 2 with verification script, [verification_once.ipynb](Method_1/verification_once.ipynb).
 
+Confusion Matrix :
+
+![CNF](Method_1/method1_cnf.png)
+
 ## Method 2
 
 In the method, two models are trained to classify the gender (2 classes) with [classify_gender.ipynb](Method_2/classify_gender.ipynb) and face mask worn type (4 classes) with [classify_type.ipynb](Method_2/classify_type.ipynb) based on a pretrained ResNet-50 model. Most layers of the pretrained model are freezed and only a set of layers are trained along with new set of layers to suit the dataset. 
@@ -61,9 +65,10 @@ In the method, two models are trained to classify the gender (2 classes) with [c
 After that, the two trained models are concatenated to make a parallel network along with new layers, and trained with the full dataset similar to in method 1 with [train_combined.ipynb](Method_2/train_combined.ipynb).
 The full models and related details are included in the training scripts, which to be used with the dataset 1.
 
+The output model is also validated with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
+
 ![Combined Model](Method_2/combined.png)
 
-The output model is also validated with the dataset 2 with verification script, [verification.ipynb](Method_2/verification.ipynb).
 
 ## Results
 
