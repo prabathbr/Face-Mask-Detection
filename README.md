@@ -9,7 +9,7 @@ This project is developed to study popular deep learning networks in image class
 
 ## License
 
-The source code hosted in this repository is shared under MIT license.
+The source code hosted in this repository is shared under [MIT license](LICENSE).
 
 ## Sponsor
 
