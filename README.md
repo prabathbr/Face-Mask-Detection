@@ -4,8 +4,10 @@ This project is developed to study popular deep learning networks in image class
 
 ## Objectives
 
-1. Develop a neural network classifier to identify the eight classes defined by gender and different face mask worn type combinations.
-1. Tune the Keras/Tensorflow based model to obtain 90 % test accuracy with a balanced dataset.
+1. Develop a neural network classifier to identify the eight classes defined by gender and different face mask worn type combinations.  
+ ```["Male, mask is worn correctly, covers the nose and mouth", "Male, mask covers the mouth, but does not cover the nose", "Male, mask is on, but does not cover the nose or mouth.", "Male, no mask on the face","Female, mask is worn correctly, covers the nose and mouth", "Female, mask covers the mouth, but does not cover the nose", "Female, mask is on, but does not cover the nose or mouth.", "Female, no mask on the face"]```
+
+2. Tune the Keras/Tensorflow based model to obtain 90 % test accuracy with a balanced dataset.
 
 ## License
 
