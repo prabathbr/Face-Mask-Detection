@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Face-Mask-Detection
 
 This project is developed to study popular deep learning networks in image classification and to use transfer learning in a practical application.  
